@@ -1,0 +1,3 @@
+/home/atakan/cpp/practice/oop_books/build/CMakeFiles/rebuild_cache.dir
+/home/atakan/cpp/practice/oop_books/build/CMakeFiles/oop_books.dir
+/home/atakan/cpp/practice/oop_books/build/CMakeFiles/edit_cache.dir

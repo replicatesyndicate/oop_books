@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Book.cpp
+Book.h
+../include/Book.h
+iostream
+-
+
+../include/Book.h
+
+../include/Library.cpp
+Library.h
+../include/Library.h
+Book.h
+../include/Book.h
+iostream
+-
+
+../include/Library.h
+
+/home/atakan/cpp/practice/oop_books/src/oop_books.cpp
+iostream
+-
+Book.cpp
+/home/atakan/cpp/practice/oop_books/src/Book.cpp
+Library.cpp
+/home/atakan/cpp/practice/oop_books/src/Library.cpp
+
