@@ -57,38 +57,38 @@ include CMakeFiles/oop_books.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/oop_books.dir/flags.make
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.o: CMakeFiles/oop_books.dir/flags.make
-CMakeFiles/oop_books.dir/src/oop_books.cpp.o: ../src/oop_books.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atakan/cpp/practice/oop_books/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oop_books.dir/src/oop_books.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_books.dir/src/oop_books.cpp.o -c /home/atakan/cpp/practice/oop_books/src/oop_books.cpp
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o: CMakeFiles/oop_books.dir/flags.make
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o: ../src/oop_books_step_3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atakan/cpp/practice/oop_books/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o -c /home/atakan/cpp/practice/oop_books/src/oop_books_step_3.cpp
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_books.dir/src/oop_books.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atakan/cpp/practice/oop_books/src/oop_books.cpp > CMakeFiles/oop_books.dir/src/oop_books.cpp.i
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atakan/cpp/practice/oop_books/src/oop_books_step_3.cpp > CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.i
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_books.dir/src/oop_books.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atakan/cpp/practice/oop_books/src/oop_books.cpp -o CMakeFiles/oop_books.dir/src/oop_books.cpp.s
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atakan/cpp/practice/oop_books/src/oop_books_step_3.cpp -o CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.s
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.o.requires:
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.requires:
 
-.PHONY : CMakeFiles/oop_books.dir/src/oop_books.cpp.o.requires
+.PHONY : CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.requires
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.o.provides: CMakeFiles/oop_books.dir/src/oop_books.cpp.o.requires
-	$(MAKE) -f CMakeFiles/oop_books.dir/build.make CMakeFiles/oop_books.dir/src/oop_books.cpp.o.provides.build
-.PHONY : CMakeFiles/oop_books.dir/src/oop_books.cpp.o.provides
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.provides: CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.requires
+	$(MAKE) -f CMakeFiles/oop_books.dir/build.make CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.provides.build
+.PHONY : CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.provides
 
-CMakeFiles/oop_books.dir/src/oop_books.cpp.o.provides.build: CMakeFiles/oop_books.dir/src/oop_books.cpp.o
+CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.provides.build: CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o
 
 
 # Object files for target oop_books
 oop_books_OBJECTS = \
-"CMakeFiles/oop_books.dir/src/oop_books.cpp.o"
+"CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o"
 
 # External object files for target oop_books
 oop_books_EXTERNAL_OBJECTS =
 
-oop_books: CMakeFiles/oop_books.dir/src/oop_books.cpp.o
+oop_books: CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o
 oop_books: CMakeFiles/oop_books.dir/build.make
 oop_books: CMakeFiles/oop_books.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atakan/cpp/practice/oop_books/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable oop_books"
@@ -99,7 +99,7 @@ CMakeFiles/oop_books.dir/build: oop_books
 
 .PHONY : CMakeFiles/oop_books.dir/build
 
-CMakeFiles/oop_books.dir/requires: CMakeFiles/oop_books.dir/src/oop_books.cpp.o.requires
+CMakeFiles/oop_books.dir/requires: CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o.requires
 
 .PHONY : CMakeFiles/oop_books.dir/requires
 

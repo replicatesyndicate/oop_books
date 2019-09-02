@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oop_books.dir/src/oop_books.cpp.o"
+  "CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o"
   "oop_books.pdb"
   "oop_books"
 )

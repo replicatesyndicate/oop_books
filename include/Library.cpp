@@ -3,26 +3,39 @@
 #include <iostream>
 
 void Library::addBook(Book book){
-    static int index_addBook=0;
-    if (index_addBook < Library::maxAmountofBooks){
-        Library::books[index_addBook++] = book;
-        std::cout << "Added " << book.getTitle() << " by " << book.getAuthor() << " to the library as entry number: " << index_addBook << std::endl;
+    if (Library::currentAmountOfBooks < Library::maxAmountOfBooks){
+        Library::books[Library::currentAmountOfBooks++] = book;
+        //std::cout << "Added " << book.getTitle() << " by " << book.getAuthor() << " to the library as entry number: " << Library::currentAmountOfBooks << std::endl; //debugger
     } else {
-        std::cout << "Too many books! Rewriting book entries." << std::endl;
-        index_addBook = 0;
-        Library::books[index_addBook++] = book;
-        std::cout << "Added " << book.getTitle() << " by " << book.getAuthor() << " to the library as entry number: " << index_addBook << std::endl;
+        std::cout << "Too many books! Aborting book addition." << std::endl;
     }
 }
 
 void Library::getBook(int request){
-    std::cout << "Author: " << Library::books[request].getAuthor() << " Title: " << Library::books[request].getTitle() << " Year: " << Library::books[request].getYear() << std::endl; 
+    if (request < maxAmountOfBooks){
+        std::cout << "Author: " << Library::books[request].getAuthor() << " Title: " << Library::books[request].getTitle() << " Year: " << Library::books[request].getYear() << std::endl; 
+    } else {
+        std::cout << "Sorry, this library doesn't have this many books." << std::endl;
+        std::cout << "Displaying the first book in our collection instead... ";
+        std::cout << "Author: " << Library::books[0].getAuthor() << " Title: " << Library::books[0].getTitle() << " Year: " << Library::books[0].getYear() << std::endl;
+        std::cout << "For your book, try looking for a number from 0 to " << Library::maxAmountOfBooks << std::endl;
+        
+    }    
 }
 
-Library::Library(int maxAmountofBooks){
-    Library::maxAmountofBooks = maxAmountofBooks;
-    Library::books = new Book[maxAmountofBooks]; //make sure to pass in the pointer's address by the object name
-    //std::cout << "Library created with " << Library::maxAmountofBooks << " many books!" << std::endl; //debugger
+void Library::showBooks(){
+    for (int i = 0; i < Library::currentAmountOfBooks; i++){
+        std::cout << "In position " << i << " : ";
+        Library::getBook(i);        
+    }
+}
+Library::Library(int maxAmountOfBooks){
+    Library::maxAmountOfBooks = maxAmountOfBooks;
+    Library::books = new Book[maxAmountOfBooks]; //make sure to pass in the pointer's address by the object name
+    //std::cout << "Library created with " << Library::maxAmountOfBooks << " many books!" << std::endl; //debugger
+
+    Library::currentAmountOfBooks = 0;
+    //std::cout << "This library has just been built and it should have 0 books: " << Library::currentAmountOfBooks << std::endl; //debugger
 }
 
 Library::~Library(){

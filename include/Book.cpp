@@ -20,9 +20,7 @@ void Book::setYear(short year){
 }
 
 Book::Book(){
-    title = "Do Androids Dream of Electric Sheep?";
-    author = "Philip K. Dick";
-    year = 1968;
+    
 }
 
 Book::~Book(){
