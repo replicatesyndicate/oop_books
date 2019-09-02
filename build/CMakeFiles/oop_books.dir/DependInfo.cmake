@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/atakan/cpp/practice/oop_books/src/oop_books_step_3.cpp" "/home/atakan/cpp/practice/oop_books/build/CMakeFiles/oop_books.dir/src/oop_books_step_3.cpp.o"
+  "/home/atakan/cpp/practice/oop_books/src/oop_books_step_4.cpp" "/home/atakan/cpp/practice/oop_books/build/CMakeFiles/oop_books.dir/src/oop_books_step_4.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

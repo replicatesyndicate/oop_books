@@ -13,19 +13,18 @@ void Library::addBook(Book book){
 
 void Library::getBook(int request){
     if (request < maxAmountOfBooks){
-        std::cout << "Author: " << Library::books[request].getAuthor() << " Title: " << Library::books[request].getTitle() << " Year: " << Library::books[request].getYear() << std::endl; 
-    } else {
+        std::cout << "Book ID: " << books[request].getBookId() << " | Author: " << books[request].getAuthor() << " | Title: " << books[request].getTitle() << " | Year: " << books[request].getYear() << std::endl; 
+    } else { 
         std::cout << "Sorry, this library doesn't have this many books." << std::endl;
         std::cout << "Displaying the first book in our collection instead... ";
-        std::cout << "Author: " << Library::books[0].getAuthor() << " Title: " << Library::books[0].getTitle() << " Year: " << Library::books[0].getYear() << std::endl;
-        std::cout << "For your book, try looking for a number from 0 to " << Library::maxAmountOfBooks << std::endl;
+        std::cout << "Author: " << books[0].getAuthor() << " Title: " << books[0].getTitle() << " Year: " << books[0].getYear() << std::endl;
+        std::cout << "For your book, try looking for a number from 0 to " << maxAmountOfBooks << std::endl;
         
     }    
 }
 
 void Library::showBooks(){
     for (int i = 0; i < Library::currentAmountOfBooks; i++){
-        std::cout << "In position " << i << " : ";
         Library::getBook(i);        
     }
 }

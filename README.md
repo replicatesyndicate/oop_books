@@ -9,4 +9,7 @@ To run a specific example, edit the CMakeLists.txt file, line 3 to change "#" to
 set(SOURCE src\oop_books_step_#.cpp)
 ```  
   
-Save the file, then `cd build`, `cmake ..`, and `make`. Run the executable by `.\oop_books`.
+Save the file, then `cd build`, `cmake ..`, and `make`. Run the executable by `.\oop_books`.  
+  
+Note: As the differences in exercise 5 have already been covered in the previous parts, it is skipped.  
+  
