@@ -20,12 +20,13 @@ void Library::getBook(int request){
 }
 
 Library::Library(int maxAmountofBooks){
-    this -> maxAmountofBooks;
-    Book *books = new Book[maxAmountofBooks];
+    Library::maxAmountofBooks = maxAmountofBooks;
+    Library::books = new Book[maxAmountofBooks]; //make sure to pass in the pointer's address by the object name
+    //std::cout << "Library created with " << Library::maxAmountofBooks << " many books!" << std::endl; //debugger
 }
 
 Library::~Library(){
-    static int index_Library_Destructor = 1; //debugger
-    delete [] books;
-    std::cout << "I've deleted: " << index_Library_Destructor << " books!" << std::endl;
+    //static int index_Library_Destructor = 1; //debugger
+    delete [] Library::books;
+    //std::cout << "I've deleted: " << index_Library_Destructor << " books!" << std::endl;
 }

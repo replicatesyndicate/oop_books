@@ -20,6 +20,8 @@ int main(int argc, char *argv[]){
     book.setAuthor("H.P. Lovecraft");
     book.setYear(1978);
 
+    //cout << "This is your book: " << book.getTitle() << " by " << book.getAuthor() << ". Year: " << book.getYear() << endl;
+
     lib.addBook(book);
     lib.getBook(0);//first book, zeroth index.
 
